@@ -19,13 +19,12 @@
         dotnet-sdk
 
         (vscode-with-extensions.override  {
-          vscode = pkgs.vscodium;
+          vscode = pkgs.vscode;
           vscodeExtensions = with pkgs.vscode-extensions; [
             jnoortheen.nix-ide
             mhutchie.git-graph
             ms-dotnettools.csharp
             ionide.ionide-fsharp
-
           ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
             #{
             #  name = "vscode-edit-csv";
