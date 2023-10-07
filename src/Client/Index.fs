@@ -86,7 +86,7 @@ let containerBox (model: Model) (dispatch: Msg -> unit) =
         ]
     ]
 
-let view (model: Model) (dispatch: Msg -> unit) =
+let view2 (model: Model) (dispatch: Msg -> unit) =
     Bulma.hero [
         hero.isFullHeight
         color.isPrimary
@@ -117,4 +117,15 @@ let view (model: Model) (dispatch: Msg -> unit) =
                 ]
             ]
         ]
+    ]
+
+let view (model: Model) (dispatch: Msg -> unit) =
+    Html.canvas [
+        prop.id "renderCanvas"
+        prop.style [ 
+            style.width 400
+            style.height 400
+            
+        ]
+
     ]

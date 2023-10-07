@@ -17,3 +17,9 @@ Program.mkProgram Index.init Index.update Index.view
 |> Program.withDebugger
 #endif
 |> Program.run
+
+open Fable.Core.JsInterop
+
+let lol : unit -> unit = import "lol" "./main.js"
+
+lol()
